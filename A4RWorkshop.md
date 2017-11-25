@@ -2,11 +2,11 @@
 
 #### [Created 25/Nov/2017]
 
-This workshop is based on the Microsoft Research Training Materials located here: https://github.com/MSRConnections/Azure-training-course
+This workshop is based on the <a href="https://github.com/MSRConnections/Azure-training-course">Microsoft Research Azure Training Course.</a>
 
 There are a number of simple introductory labs located here: https://github.com/MSRConnections/Azure-training-course/tree/master/Content
 
-Before beginning you may want to <a href=https://github.com/azurebigcompute/GettingStartedGuide/blob/master/GetTooledUp.md">install some of the Azure client tools</a>.
+Before beginning you may want to <a "href=https://github.com/azurebigcompute/GettingStartedGuide/blob/master/GetTooledUp.md">install some of the Azure client tools</a>.
   
 ## Useful Links
 
