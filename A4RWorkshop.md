@@ -8,7 +8,7 @@ The labs in this workshop are based on the content provided by the <a href="http
 
 Before beginning you may want to <a href="https://github.com/azurebigcompute/GettingStartedGuide/blob/master/GetTooledUp.md">install the Azure client tools</a> for your particular operating system. 
 
-You should have received an Azure Pass from your instructor along with <a href="https://github.com/MSRConnections/Azure-training-course/blob/master/Content/Introduction/Introduction%20HOL.md">some instructions to redeem them</a>, but you are also free to run these labs in any subscription you have access to, and you can always sign up for a free Azure Pass. 
+You should have received an Azure Pass from your instructor along with <a href="https://github.com/MSRConnections/Azure-training-course/blob/master/Content/Introduction/Introduction%20HOL.md">some instructions to redeem it</a>, but you are also free to run these labs in any subscription you have access to, and you can always sign up for a <a href="https://azure.microsoft.com/en-us/free/">free Azure Pass</a>. 
   
 ## Useful Links
 
