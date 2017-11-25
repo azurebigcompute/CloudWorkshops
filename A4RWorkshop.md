@@ -1,4 +1,6 @@
-# Azure4Research Cloud Workshop (25/Nov/2017)
+# Azure4Research Cloud Workshop 
+
+#### [Created 25/Nov/2017]
 
 This workshop is based on the Microsoft Research Training Materials located here: https://github.com/MSRConnections/Azure-training-course
 
