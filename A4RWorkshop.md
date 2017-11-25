@@ -2,11 +2,11 @@
 
 #### [Created 25/Nov/2017]
 
-This workshop is based on the <a href="https://github.com/MSRConnections/Azure-training-course">Microsoft Research Azure Training Course.</a>
-
-There are a number of simple introductory labs located here: https://github.com/MSRConnections/Azure-training-course/tree/master/Content
+This workshop is based on the <a href="https://github.com/MSRConnections/Azure-training-course">Microsoft Research Azure Training Course.</a>. The course provides a number of simple but powerful <a href="https://github.com/MSRConnections/Azure-training-course/tree/master/Content>introductory labs</a> on various topics including Data Science & Big Data, Machine Learning, IoT, High Performance Computing and Big Compute with Azure Batch & Containers. 
 
 Before beginning you may want to <a "href=https://github.com/azurebigcompute/GettingStartedGuide/blob/master/GetTooledUp.md">install some of the Azure client tools</a>.
+
+You should have received an Azure Pass from your instructor along with some instructions to redeem them, but you are also free to run these labs in any subscription you have access to, and you can always sign up for a free Azure Pass. 
   
 ## Useful Links
 
