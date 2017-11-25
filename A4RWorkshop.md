@@ -2,11 +2,13 @@
 
 #### [Created 25/Nov/2017]
 
-This workshop is based on the <a href="https://github.com/MSRConnections/Azure-training-course">Microsoft Research Azure Training Course.</a>. The course provides a number of simple but powerful <a href="https://github.com/MSRConnections/Azure-training-course/tree/master/Content">introductory labs</a> on various topics including Data Science & Big Data, Machine Learning, IoT, High Performance Computing and Big Compute with Azure Batch & Containers. 
+This is a hands-on workshop providing a basic orientation and introduction to Microsoft Azure for Researchers & IT Staff supporting Research. 
 
-Before beginning you may want to <a href="https://github.com/azurebigcompute/GettingStartedGuide/blob/master/GetTooledUp.md">install some of the Azure client tools</a>.
+The labs in this workshop are based on the content provided by the <a href="https://github.com/MSRConnections/Azure-training-course">Microsoft Research Azure Training Course</a>. The course provides a number of simple but powerful <a href="https://github.com/MSRConnections/Azure-training-course/tree/master/Content">introductory labs</a> on various topics that are relevant to Researchers, including Data Science & Big Data, Machine Learning, IoT, High Performance Computing and Big Compute with Azure Batch & Containers. 
 
-You should have received an Azure Pass from your instructor along with some instructions to redeem them, but you are also free to run these labs in any subscription you have access to, and you can always sign up for a free Azure Pass. 
+Before beginning you may want to <a href="https://github.com/azurebigcompute/GettingStartedGuide/blob/master/GetTooledUp.md">install the Azure client tools</a> for your particular operating system. 
+
+You should have received an Azure Pass from your instructor along with <a href="https://github.com/MSRConnections/Azure-training-course/blob/master/Content/Introduction/Introduction%20HOL.md">some instructions to redeem them</a>, but you are also free to run these labs in any subscription you have access to, and you can always sign up for a free Azure Pass. 
   
 ## Useful Links
 
