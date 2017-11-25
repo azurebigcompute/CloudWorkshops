@@ -1,6 +1,6 @@
 # Cloud Workshops
 
-Cloud Workshops are a format Microsoft is a using to train end-users and partners on specific topics such as Big Compute. 
+Cloud Workshops are a format Microsoft is a using to train and enable our end-users and partners on specific Azure topics such as Azure Big Compute & High Performance Computing. 
 
 This page provides links to specific specialized Big Compute Cloud Workshops and supporting (public) materials & links. 
 
