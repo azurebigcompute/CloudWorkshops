@@ -26,6 +26,7 @@ You should have received an Azure Pass from your instructor along with <a href="
 * Jupyter Notebooks: https://notebooks.azure.com/ 
 * Microsoft Documentation: https://docs.microsoft.com/ 
 * Azure: https://docs.microsoft.com/en-us/azure/ 
+* Free Azure ML ebook: http://bit.ly/a4r-mlbook
 
 #### Machine Sizing & Estimating Costs: 
 * https://docs.microsoft.com/en-us/azure/virtual-machines/linux/sizes 
