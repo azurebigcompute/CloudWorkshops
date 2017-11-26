@@ -42,6 +42,8 @@ Links from the Presentations:
 * https://blogs.msdn.microsoft.com/azure_4_research/
 * https://azure4research.azurewebsites.net/proposal/
 
+
+
 ![epic](epic.jpg)
 
 
