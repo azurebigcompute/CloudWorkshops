@@ -18,8 +18,7 @@ Here are some pages, sites & tools we will refer to in the workshop:
 * Redeem your Azure Pass: https://www.microsoftazurepass.com/ 
 * Login to the Azure Portal: https://portal.azure.com/ 
 * Download the labs: https://github.com/MSRConnections/Azure-training-course
-* Create a Data Science VM:
-https://docs.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/overview 
+* Create a Data Science VM: http://aka.ms/dsvm/ubuntu 
 * Tools Overview: https://github.com/azurebigcompute/GettingStartedGuide/blob/master/GetTooledUp.md
 
 Tool download links:
