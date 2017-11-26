@@ -12,7 +12,7 @@ You should have received an Azure Pass from your instructor along with <a href="
   
 ## Useful Links
 
-Here are some pages, sites & tools we will refer to in the workshop: 
+#### Here are some pages, sites & tools we will refer to in the workshop: 
 
 * Program Overview: https://www.azure4research.com/ 
 * Redeem your Azure Pass: https://www.microsoftazurepass.com/ 
@@ -21,7 +21,7 @@ Here are some pages, sites & tools we will refer to in the workshop:
 * Create a Data Science VM: http://aka.ms/dsvm/ubuntu 
 * Tools Overview: https://github.com/azurebigcompute/GettingStartedGuide/blob/master/GetTooledUp.md
 
-Tool download links:
+#### Tool download links:
 * Azure CLI: https://docs.microsoft.com/en-us/cli/azure/install-azure-cli 
 * Storage Explorer: https://storageexplorer.com 
 * Batch Labs: https://azure.github.io/BatchLabs/ 
@@ -29,13 +29,13 @@ Tool download links:
 * Microsoft Documentation: https://docs.microsoft.com/ 
 * Azure: https://docs.microsoft.com/en-us/azure/ 
 
-Machine Sizing & Estimating Costs: 
+#### Machine Sizing & Estimating Costs: 
 * https://docs.microsoft.com/en-us/azure/virtual-machines/linux/sizes 
 * https://azure.microsoft.com/en-us/pricing/details/virtual-machines/linux/ 
 * https://azure.microsoft.com/en-us/pricing/calculator/ 
 * https://azure.microsoft.com/en-us/pricing/ 
 
-Links from the Presentations: 
+#### Links from the Presentations: 
 * https://www.customvision.ai/ 
 * https://aka.ms/jupytercambridge 
 * https://www.software.ac.uk/research-software-engineering-cloud-computing-awards-microsoft 
