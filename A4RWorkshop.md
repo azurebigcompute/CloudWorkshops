@@ -1,7 +1,5 @@
 # Azure4Research Cloud Workshop 
 
-#### [Created 25/Nov/2017]
-
 This is a hands-on workshop providing a basic orientation and introduction to Microsoft Azure for Researchers & IT Staff supporting Research. 
 
 The labs in this workshop are based on the content provided by the <a href="https://github.com/MSRConnections/Azure-training-course">Microsoft Research Azure Training Course</a>. The course provides a number of simple but powerful <a href="https://github.com/MSRConnections/Azure-training-course/tree/master/Content">introductory labs</a> on various topics that are relevant to Researchers, including Data Science & Big Data, Machine Learning, IoT, High Performance Computing and Big Compute with Azure Batch & Containers. 
