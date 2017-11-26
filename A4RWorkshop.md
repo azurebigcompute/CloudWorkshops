@@ -40,3 +40,7 @@ Links from the Presentations:
 * https://www.customvision.ai/ 
 * https://aka.ms/jupytercambridge 
 * https://www.software.ac.uk/research-software-engineering-cloud-computing-awards-microsoft 
+* https://blogs.msdn.microsoft.com/azure_4_research/
+* https://azure4research.azurewebsites.net/proposal/
+
+
