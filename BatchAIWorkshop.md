@@ -60,10 +60,35 @@ Azure Pass  AzureCloud   a0f92f07-9b51-4686-9233-c1ef4d19a8bf  Enabled  True
 
 ## 1) Download the BatchAIQuickStart.zip
 
-From your Ubuntu Data Science VM, just do:
+From your Ubuntu Data Science VM, grab the file with wget and unzip it: 
 
 ```
-wget 
+azureuser@dsvm:~$ wget https://github.com/azurebigcompute/CloudWorkshops/raw/master/BatchAIQuickStart.zip
+--2017-12-06 22:17:37--  https://github.com/azurebigcompute/CloudWorkshops/raw/master/BatchAIQuickStart.zip
+Resolving github.com... 192.30.253.113, 192.30.253.112
+Connecting to github.com|192.30.253.113|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://raw.githubusercontent.com/azurebigcompute/CloudWorkshops/master/BatchAIQuickStart.zip [following]
+--2017-12-06 22:17:37--  https://raw.githubusercontent.com/azurebigcompute/CloudWorkshops/master/BatchAIQuickStart.zip
+Resolving raw.githubusercontent.com... 151.101.32.133
+Connecting to raw.githubusercontent.com|151.101.32.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 16139626 (15M) [application/zip]
+Saving to: ‘BatchAIQuickStart.zip’
+
+BatchAIQuickStart.zip       100%[=========================================>]  15.39M  46.0MB/s    in 0.3s
+
+2017-12-06 22:17:38 (46.0 MB/s) - ‘BatchAIQuickStart.zip’ saved [16139626/16139626]
+
+azureuser@dsvm:~$ unzip BatchAIQuickStart.zip
+Archive:  BatchAIQuickStart.zip
+  inflating: ConvNet_MNIST.py
+  inflating: Test-28x28_cntk_text.txt
+  inflating: Train-28x28_cntk_text.txt
+azureuser@dsvm:~$ ls
+BatchAIQuickStart.zip  Desktop    Test-28x28_cntk_text.txt
+ConvNet_MNIST.py       notebooks  Train-28x28_cntk_text.txt
+azureuser@dsvm:~$
 ```
 
 ## 2) Customize the job.json File
@@ -88,6 +113,57 @@ With an equivalent CPU container:
          }
      }
 ```
+
+## 3) Setup Azure Batch AI
+
+At this point you can <a href="https://docs.microsoft.com/en-us/azure/batch-ai/quickstart-cli">follow the instructions in the example</a>. Alternatively, the commands are summarized here for your convenience:
+
+```
+#-- Enable Resource Providers
+az provider register -n Microsoft.BatchAI
+az provider register -n Microsoft.Batch
+
+#-- Setup Resource Group & Storage Account
+az group create --name mikebatchaigrp --location eastus
+az configure --defaults group=mikebatchaigrp
+az configure --defaults location=eastus
+az storage account create --name mkbatchaistore --sku Standard_LRS -g mikebatchaigrp
+
+#-- Set Default Accounts
+export AZURE_STORAGE_ACCOUNT=mkbatchaistore
+export AZURE_STORAGE_KEY=$(az storage account keys list --account-name mkbatchaistore -o tsv --query [0].value
+)
+export AZURE_BATCHAI_STORAGE_ACCOUNT=mkbatchaistore
+export AZURE_BATCHAI_STORAGE_KEY=$(az storage account keys list --account-name mkbatchaistore -o tsv --query [
+0].value)
+
+#-- Create Shares & Upload the BatchAIQuickStart files
+az storage share create --name batchaiquickstart
+az storage directory create --share-name batchaiquickstart  --name mnistcntksample
+az storage file upload --share-name batchaiquickstart --source Train-28x28_cntk_text.txt --path mnistcntksampl
+e
+az storage file upload --share-name batchaiquickstart --source Test-28x28_cntk_text.txt --path mnistcntksample
+az storage file upload --share-name batchaiquickstart --source ConvNet_MNIST.py --path mnistcntksample
+
+#-- Create Your Cluster
+az batchai cluster create --name mycluster --vm-size STANDARD_NC6 --image UbuntuLTS --min 1 --max 1 --afs-name
+ batchaiquickstart --afs-mount-path azurefileshare --user-name azureuser --password Azur3Passw0rd
+az batchai cluster list -o table
+
+#-- Create your job.json
+
+#-- Start Your Machine Learning Job
+az batchai job create --name myjob --cluster-name mycluster --config job.json
+az batchai job list -o table
+
+#-- Check the Outputs
+az batchai job list-files --name myjob --output-directory-id stdouterr
+az batchai job stream-file --job-name myjob --output-directory-id stdouterr --name stderr.txt
+
+#-- Delete Your Cluster
+az batchai job delete --name myjob
+az batchai cluster delete --name mycluster
+
 
 # Next Steps
 
