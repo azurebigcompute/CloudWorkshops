@@ -26,7 +26,6 @@ To sign in, use a web browser to open the page https://aka.ms/devicelogin and en
 The CLI waits at this point. Follow the instruction and login via a browser:
 
 :![devcelogin](images/devicelogin.PNG)
-:![connect](images/pickaccount.PNG)
 
 At this point the prompt returns in your linux window and you can continue again there: 
 ```
@@ -167,4 +166,8 @@ az batchai cluster delete --name mycluster
 
 # Next Steps
 
-Congratulations! You have completed the workshop. Open a helpdesk ticket to enable GPU's in your subscription. Once the ticket has been fulfilled, re-run the test above and GPU, and compare the speed of the Training job. 
+Congratulations! You have completed the workshop. 
+
+1) Open a helpdesk ticket to enable GPU's in your subscription. Once the ticket has been fulfilled, re-run the test above and GPU, and compare the speed of the Training job. 
+
+2) Access the <a href="https://github.com/Azure/BatchAI">Azure Batch AI Github</a>, and execute some more of the recipes for the other toolkits. 
