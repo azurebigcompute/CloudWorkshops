@@ -94,7 +94,7 @@ azureuser@dsvm:~$
 
 Unfortunately the default Azure Pass does not have GPU (N-Series nodes) enabled by default. You can fix this by opening a helpdesk ticket via the '?' icon in portal.azure.com, and request that N-Series is enabled for your subscription. 
 
-However in the meantime for this workshop, we will simply replace the GPU container with a CPU container. Hence, please download <a href="job.json">This job.json</a>file. 
+However in the meantime for this workshop, we will simply replace the GPU container with a CPU container. Hence, please download this <a href="job.json">job.json</a>file. 
 
 Note the key difference from the example is that we replace the GPU container:
 ```
@@ -148,9 +148,13 @@ az storage file upload --share-name batchaiquickstart --source ConvNet_MNIST.py 
 az batchai cluster create --name mycluster --vm-size STANDARD_NC6 --image UbuntuLTS --min 1 --max 1 --afs-name
  batchaiquickstart --afs-mount-path azurefileshare --user-name azureuser --password AL0ng0bscurePassw0rd
 az batchai cluster list -o table
+```
 
-#-- Create your job.json
+## 4) Start your Machine Learning Training job
 
+Create your <a href="job.json">job.json</a> in the same directory as the QuickStart files you unzipped. 
+
+```
 #-- Start Your Machine Learning Job
 az batchai job create --name myjob --cluster-name mycluster --config job.json
 az batchai job list -o table
