@@ -6,7 +6,7 @@ Before we get there we need to do some basic setup:
 
 ## 1) Enable Your Subscription
 
-Your instructor will provide you with a code and guidance here. You will redeem your Azure Pass code via <a href="https://www.microsoftazurepass.com/">the AzurePass website</a>, which will enable your subscription and credit. You will need to provide an e-mail address, or can simply create a new outlook.com address. 
+Your instructor will provide you with a code and guidance here. You will redeem your Azure Pass code via <a href="https://www.microsoftazurepass.com/">the AzurePass website</a>, which will enable your subscription and credit. You will need to provide an e-mail address, or can simply create a new outlook.com address. Detailed instructions are available in <a href=ActivateAzurePass.pdf>this document</a>.
 
 ## 2) Deploy an Ubuntu Data Science VM
 
