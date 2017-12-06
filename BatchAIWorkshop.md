@@ -170,8 +170,12 @@ az batchai cluster delete --name mycluster
 
 # Next Steps
 
-Congratulations! You have completed the workshop. 
+Congratulations! You have completed the basic part of the workshop. 
 
-1) Open a helpdesk ticket to enable GPU's in your subscription. Once the ticket has been fulfilled, re-run the test above and GPU, and compare the speed of the Training job. 
+1) Login to portal.azure.com, and find your Azure Batch AI cluster. Locate the IP address for the node, and see if you can figure out how to ssh into the node, and view the job while it's running. 
 
-2) Access the <a href="https://github.com/Azure/BatchAI">Azure Batch AI Github</a>, and execute some more of the recipes for the other toolkits. 
+2) Download <a href="storageexplore.com">Storage Explorer</a>, login to your subscription, and see if you can find the files you uploaded. 
+
+3) Open a helpdesk ticket to enable GPU's in your subscription. Once the ticket has been fulfilled, re-run the test above and GPU, and compare the speed of the Training job. 
+
+3) Access the <a href="https://github.com/Azure/BatchAI">Azure Batch AI Github</a>, and execute some more of the recipes for the other toolkits. 
