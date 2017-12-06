@@ -1,18 +1,18 @@
 # Azure Batch AI Workshop
 
-The <a href="https://docs.microsoft.com/en-us/azure/batch-ai/">lab example</a> we will be working through is a simple test to deploy an Azure Batch AI cluster and run a Microsoft CNTK training job on an MNIST handwriting dataset. We will alter the example to run on a CPU container rather than a GPU container. 
+This workshop lab is based on <a href="https://docs.microsoft.com/en-us/azure/batch-ai/">this example</a>. We will be working through a simple test to deploy an Azure Batch AI cluster and run a Microsoft CNTK training job on an MNIST handwriting dataset. We will alter the example to run on a CPU container rather than a GPU container. 
 
 Before we get there we need to do some basic setup: 
 
 ## 1) Enable Your Subscription
 
-Instructor will provide you with a code and guidance here. You will redeem your Azure Pass code via <a href="https://www.microsoftazurepass.com/">the AzurePass website</a>, which will enable your subscription and credit. You will need to provide an e-mail address, or can simply create a new outlook.com address. 
+Your instructor will provide you with a code and guidance here. You will redeem your Azure Pass code via <a href="https://www.microsoftazurepass.com/">the AzurePass website</a>, which will enable your subscription and credit. You will need to provide an e-mail address, or can simply create a new outlook.com address. 
 
 ## 2) Deploy an Ubuntu Data Science VM
 
 Follow the instructions under <a href="https://docs.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/dsvm-ubuntu-intro">"Create your Data Science Virtual Machine for Linux"</a>
 
-Be sure not to select the Deep Learning VM, but select the Data Science VM, as you do not yet have access to GPU nodes, it will not allow you to provision the Data Science VM. 
+Be sure not to select the Deep Learning VM, but select the Data Science VM, as your Azure Pass may not yet have access to GPU nodes, it will not allow you to provision the Data Science VM. 
 
 ## 3) Login to Your Subscription via CLI + Web Browser
 
@@ -163,7 +163,7 @@ az batchai job stream-file --job-name myjob --output-directory-id stdouterr --na
 #-- Delete Your Cluster
 az batchai job delete --name myjob
 az batchai cluster delete --name mycluster
-
+```
 
 # Next Steps
 
