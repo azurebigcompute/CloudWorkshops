@@ -147,7 +147,7 @@ az storage file upload --share-name batchaiquickstart --source ConvNet_MNIST.py 
 
 #-- Create Your Cluster
 az batchai cluster create --name mycluster --vm-size STANDARD_NC6 --image UbuntuLTS --min 1 --max 1 --afs-name
- batchaiquickstart --afs-mount-path azurefileshare --user-name azureuser --password Azur3Passw0rd
+ batchaiquickstart --afs-mount-path azurefileshare --user-name azureuser --password AL0ng0bscurePassw0rd
 az batchai cluster list -o table
 
 #-- Create your job.json
