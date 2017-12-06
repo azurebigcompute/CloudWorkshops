@@ -1,0 +1,25 @@
+{
+ "properties": {
+     "stdOutErrPathPrefix": "$AZ_BATCHAI_MOUNT_ROOT/azurefileshare",
+    "inputDirectories": [{
+         "id": "SAMPLE",
+         "path": "$AZ_BATCHAI_MOUNT_ROOT/azurefileshare/mnistcntksample"
+     }],
+     "outputDirectories": [{
+         "id": "MODEL",
+         "pathPrefix": "$AZ_BATCHAI_MOUNT_ROOT/azurefileshare",
+         "pathSuffix": "model",
+         "type": "custom"
+     }],
+     "containerSettings": {
+         "imageSourceRegistry": {
+             "image": "microsoft/cntk:2.1-cpu-python3.5"
+         }
+     },
+     "nodeCount": 1,
+     "cntkSettings": {
+         "pythonScriptFilePath": "$AZ_BATCHAI_INPUT_SAMPLE/ConvNet_MNIST.py",
+         "commandLineArgs": "$AZ_BATCHAI_INPUT_SAMPLE $AZ_BATCHAI_OUTPUT_MODEL"
+     }
+ }
+}

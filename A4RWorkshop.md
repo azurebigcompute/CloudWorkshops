@@ -43,7 +43,7 @@ You should have received an Azure Pass from your instructor along with <a href="
 
 ***
 
-![http://aka.ms/a4rguide](epic.jpg)
+![http://aka.ms/a4rguide](images/epic.jpg)
 
 http://aka.ms/a4rguide
 
