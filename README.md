@@ -5,3 +5,5 @@ Cloud Workshops are a format Microsoft is a using to train and enable our end-us
 This page provides links to specific specialized Big Compute Cloud Workshops and supporting (public) materials & links. 
 
 1. <a href="https://github.com/azurebigcompute/CloudWorkshops/blob/master/A4RWorkshop.md">Azure4Research Workshop</a> - Entry-Level Cloud Workshop geared towards the Research & Scientific Community, encompassing Big Data & Machine Learning in addition to Big Compute & HPC Hands-On Labs. 
+
+2. <a href="https://github.com/azurebigcompute/CloudWorkshops/blob/master/BatchAIWorkshop.md">Azure Batch AI Workshop</a> - Introduction to Azure Batch AI. 
