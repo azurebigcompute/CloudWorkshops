@@ -180,4 +180,6 @@ Congratulations! You have completed the basic part of the workshop.
 
 3) Open a helpdesk ticket to enable GPU's in your subscription. Once the ticket has been fulfilled, re-run the test above and GPU, and compare the speed of the Training job. 
 
-3) Access the <a href="https://github.com/Azure/BatchAI">Azure Batch AI Github</a>, and execute some more of the recipes for the other toolkits. 
+4) Access the <a href="https://github.com/Azure/BatchAI">Azure Batch AI Github</a>, and execute some more of the recipes for the other toolkits. 
+
+5) Create a hand drawn numerical digit, and run this through your trained model. 
