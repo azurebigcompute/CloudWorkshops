@@ -2,7 +2,9 @@
 
 This workshop lab is based on <a href="https://docs.microsoft.com/en-us/azure/batch-ai/">this example</a>. We will be working through a simple test to deploy an Azure Batch AI cluster and run a Microsoft CNTK training job on an MNIST handwriting dataset. We will alter the example to run on a CPU container rather than a GPU container. 
 
-Before we get there we need to do some basic setup: 
+If you want to understand the deeper details of the CNTK CNN implementation you can read <a href="https://www.cntk.ai/pythondocs/CNTK_103D_MNIST_ConvolutionalNeuralNetwork.html">here</a>. Microsoft CNTK Code & Examples are available <a href="https://github.com/Microsoft/CNTK">here</a>.
+
+Before we get started, we need to do some basic Azure setup: 
 
 ## 1) Enable Your Subscription
 
